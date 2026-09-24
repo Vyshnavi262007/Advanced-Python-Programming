@@ -1,1 +1,168 @@
+# Python Programming Lab Applications
 
+This repository contains the implementations of Python Programming Lab
+experiments based on Object-Oriented Programming, Functional Programming,
+Generators, Iterators, Decorators, and Closures.
+
+Each experiment is implemented in a separate Jupyter Notebook.
+
+## Experiments
+
+| File | Experiment | Main Concepts |
+|------|-------------|---------------|
+| `APP1.ipynb` | Zomato-like Food Delivery Management System | Classes, Objects, Inheritance, OOP |
+| `APP2.ipynb` | SBI YONO Digital Banking System | Encapsulation, Inheritance, Polymorphism, Operator Overloading |
+| `APP3.ipynb` | Zoomcar Vehicle Rental Management System | Class Hierarchy, Inheritance, Special Methods |
+| `APP4.ipynb` | Amazon Customer Purchase Analytics | Lambda, Map, Filter, Reduce |
+| `APP5.ipynb` | BESCOM Smart Electricity Consumption Monitoring System | Generators, Iterators, `yield` |
+| `APP6.ipynb` | Google Fit Inspired Activity Monitoring System | Decorators, Closures, Higher-Order Functions |
+
+## Detailed Description
+
+### APP1 – Food Delivery Management System
+
+A Zomato-like food delivery management system developed using Python
+classes and inheritance.
+
+**Concepts Used:**
+- Classes and Objects
+- Constructors
+- Inheritance
+- Method Implementation
+- Object-Oriented Programming
+
+**Main Classes:**
+`User`, `Customer`, `PremiumCustomer`, `DeliveryPartner`,
+`Restaurant`, `Order`
+
+**Main Methods:**
+`place_order()`, `calculate_discount()`, `assign_delivery()`,
+`generate_bill()`, `display_details()`
+
+---
+
+### APP2 – Digital Banking System
+
+An SBI YONO-inspired digital banking system demonstrating different
+object-oriented programming concepts.
+
+**Concepts Used:**
+- Encapsulation
+- Inheritance
+- Runtime Polymorphism
+- Operator Overloading
+- Private Attributes
+
+**Main Classes:**
+`BankAccount`, `SavingsAccount`, `CurrentAccount`,
+`FixedDepositAccount`
+
+**Special Methods:**
+`__add__()`, `__gt__()`
+
+---
+
+### APP3 – Vehicle Rental Management System
+
+A Zoomcar-inspired vehicle rental system using class hierarchies and
+Python special methods.
+
+**Concepts Used:**
+- Class Hierarchy
+- Inheritance
+- Special Methods
+- Object Creation and Deletion
+
+**Main Classes:**
+`Vehicle`, `Car`, `Bike`, `ElectricScooter`, `Rental`
+
+**Special Methods:**
+`__init__()`, `__str__()`, `__repr__()`, `__len__()`, `__del__()`
+
+---
+
+### APP4 – Customer Purchase Analytics
+
+An Amazon-inspired customer purchase analytics system for processing
+purchase records using functional programming techniques.
+
+**Concepts Used:**
+- Lambda Functions
+- `map()`
+- `filter()`
+- `reduce()`
+- Functional Programming
+
+**Operations:**
+- Calculate purchase totals
+- Filter high-value purchases
+- Calculate total sales
+- Calculate average purchase value
+- Generate purchase statistics
+
+---
+
+### APP5 – Electricity Consumption Monitoring System
+
+A BESCOM-inspired electricity consumption monitoring system that
+processes electricity readings sequentially.
+
+**Concepts Used:**
+- Generators
+- Iterators
+- `yield`
+- `__iter__()`
+- `__next__()`
+
+**Operations:**
+- Generate readings sequentially
+- Calculate total consumption
+- Calculate average consumption
+- Identify high-consumption readings
+- Monitor electricity usage
+
+---
+
+### APP6 – Activity Monitoring System
+
+A Google Fit-inspired activity monitoring system implemented using
+decorators and closures.
+
+**Concepts Used:**
+- Decorators
+- Closures
+- Higher-Order Functions
+- Function Authentication
+- Execution-Time Monitoring
+
+**Decorators Implemented:**
+- `authenticate()`
+- `log_execution()`
+- `execution_timer()`
+
+**Operations:**
+- Authenticate users
+- Log activity execution
+- Measure execution time
+- Apply multiple decorators
+- Monitor activity records
+
+## Technologies Used
+
+- Python
+- Jupyter Notebook
+- Python IDLE / VS Code
+- Python Standard Library
+
+## Repository Structure
+
+```text
+Python-Lab/
+│
+├── APP1.ipynb
+├── APP2.ipynb
+├── APP3.ipynb
+├── APP4.ipynb
+├── APP5.ipynb
+├── APP6.ipynb
+└── README.md
