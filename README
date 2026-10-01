@@ -1,163 +1,356 @@
 # Python Programming Lab Applications
 
-This repository contains the implementations of Python Programming Lab
-experiments based on Object-Oriented Programming, Functional Programming,
-Generators, Iterators, Decorators, and Closures.
+This repository contains the implementations of Python Programming Lab experiments based on Object-Oriented Programming, Functional Programming, Generators, Iterators, Decorators, Multithreading, Multiprocessing, Asynchronous Programming, Exception Handling, Logging, and Memory Profiling.
 
 Each experiment is implemented in a separate Jupyter Notebook.
 
+---
+
 ## Experiments
 
-| File | Experiment | Main Concepts |
-|------|-------------|---------------|
-| `APP1.ipynb` | Zomato-like Food Delivery Management System | Classes, Objects, Inheritance, OOP |
-| `APP2.ipynb` | SBI YONO Digital Banking System | Encapsulation, Inheritance, Polymorphism, Operator Overloading |
-| `APP3.ipynb` | Zoomcar Vehicle Rental Management System | Class Hierarchy, Inheritance, Special Methods |
-| `APP4.ipynb` | Amazon Customer Purchase Analytics | Lambda, Map, Filter, Reduce |
-| `APP5.ipynb` | BESCOM Smart Electricity Consumption Monitoring System | Generators, Iterators, `yield` |
-| `APP6.ipynb` | Google Fit Inspired Activity Monitoring System | Decorators, Closures, Higher-Order Functions |
-
-## Detailed Description
-
-### APP1 – Food Delivery Management System
-
-A Zomato-like food delivery management system developed using Python
-classes and inheritance.
-
-**Concepts Used:**
-- Classes and Objects
-- Constructors
-- Inheritance
-- Method Implementation
-- Object-Oriented Programming
-
-**Main Classes:**
-`User`, `Customer`, `PremiumCustomer`, `DeliveryPartner`,
-`Restaurant`, `Order`
-
-**Main Methods:**
-`place_order()`, `calculate_discount()`, `assign_delivery()`,
-`generate_bill()`, `display_details()`
+| File         | Experiment                                             | Main Concepts                                                  |
+| ------------ | ------------------------------------------------------ | -------------------------------------------------------------- |
+| `APP1.ipynb` | Zomato-like Food Delivery Management System            | Classes, Objects, Inheritance, OOP                             |
+| `APP2.ipynb` | SBI YONO Digital Banking System                        | Encapsulation, Inheritance, Polymorphism, Operator Overloading |
+| `APP3.ipynb` | Zoomcar Vehicle Rental Management System               | Class Hierarchy, Inheritance, Special Methods                  |
+| `APP4.ipynb` | Amazon Customer Purchase Analytics                     | Lambda, Map, Filter, Reduce                                    |
+| `APP5.ipynb` | BESCOM Smart Electricity Consumption Monitoring System | Generators, Iterators, `yield`                                 |
+| `APP6.ipynb` | Google Fit Inspired Activity Monitoring System         | Decorators, Closures, Higher-Order Functions                   |
+| `APP7.ipynb` | IDM-like Multi-File Download Manager                   | Multithreading, Thread Synchronization                         |
+| `APP8.ipynb` | Zoho Payroll Processing System                         | Multiprocessing, AsyncIO, Asynchronous Programming             |
+| `APP9.ipynb` | NPTEL Online Examination System                        | Exception Handling, Logging, Assertions, Memory Profiling      |
 
 ---
 
-### APP2 – Digital Banking System
+# Detailed Experiments
 
-An SBI YONO-inspired digital banking system demonstrating different
-object-oriented programming concepts.
+## APP1 – Zomato-like Food Delivery Management System
 
-**Concepts Used:**
-- Encapsulation
-- Inheritance
-- Runtime Polymorphism
-- Operator Overloading
-- Private Attributes
+A food delivery management system designed using Python classes and inheritance.
 
-**Main Classes:**
-`BankAccount`, `SavingsAccount`, `CurrentAccount`,
-`FixedDepositAccount`
+### Concepts Used
 
-**Special Methods:**
-`__add__()`, `__gt__()`
+* Classes and Objects
+* Constructors
+* Inheritance
+* Object-Oriented Programming
+
+### Main Classes
+
+`User`, `Customer`, `PremiumCustomer`, `DeliveryPartner`, `Restaurant`, `Order`
+
+### Main Methods
+
+`place_order()`, `calculate_discount()`, `assign_delivery()`, `generate_bill()`, `display_details()`
 
 ---
 
-### APP3 – Vehicle Rental Management System
+## APP2 – SBI YONO Digital Banking System
 
-A Zoomcar-inspired vehicle rental system using class hierarchies and
-Python special methods.
+A digital banking system demonstrating encapsulation, polymorphism, and operator overloading.
 
-**Concepts Used:**
-- Class Hierarchy
-- Inheritance
-- Special Methods
-- Object Creation and Deletion
+### Concepts Used
 
-**Main Classes:**
+* Encapsulation
+* Inheritance
+* Runtime Polymorphism
+* Operator Overloading
+* Private Attributes
+
+### Main Classes
+
+`BankAccount`, `SavingsAccount`, `CurrentAccount`, `FixedDepositAccount`
+
+### Special Methods
+
+* `__add__()`
+* `__gt__()`
+
+### Main Operations
+
+* Deposit
+* Withdraw
+* Interest calculation
+* Balance management
+* PIN management
+
+---
+
+## APP3 – Zoomcar Vehicle Rental Management System
+
+A vehicle rental management system using class hierarchies and Python special methods.
+
+### Concepts Used
+
+* Class Hierarchy
+* Inheritance
+* Python Special Methods
+* Object Creation and Deletion
+
+### Main Classes
+
 `Vehicle`, `Car`, `Bike`, `ElectricScooter`, `Rental`
 
-**Special Methods:**
-`__init__()`, `__str__()`, `__repr__()`, `__len__()`, `__del__()`
+### Special Methods
+
+* `__init__()`
+* `__str__()`
+* `__repr__()`
+* `__len__()`
+* `__del__()`
+
+### Main Operations
+
+* Vehicle management
+* Rental management
+* Rental charge calculation
+* Vehicle category handling
 
 ---
 
-### APP4 – Customer Purchase Analytics
+## APP4 – Amazon Customer Purchase Analytics
 
-An Amazon-inspired customer purchase analytics system for processing
-purchase records using functional programming techniques.
+A customer purchase analytics system for processing purchase records using functional programming.
 
-**Concepts Used:**
-- Lambda Functions
-- `map()`
-- `filter()`
-- `reduce()`
-- Functional Programming
+### Concepts Used
 
-**Operations:**
-- Calculate purchase totals
-- Filter high-value purchases
-- Calculate total sales
-- Calculate average purchase value
-- Generate purchase statistics
+* Lambda Functions
+* `map()`
+* `filter()`
+* `reduce()`
+* Functional Programming
 
----
+### Main Operations
 
-### APP5 – Electricity Consumption Monitoring System
-
-A BESCOM-inspired electricity consumption monitoring system that
-processes electricity readings sequentially.
-
-**Concepts Used:**
-- Generators
-- Iterators
-- `yield`
-- `__iter__()`
-- `__next__()`
-
-**Operations:**
-- Generate readings sequentially
-- Calculate total consumption
-- Calculate average consumption
-- Identify high-consumption readings
-- Monitor electricity usage
+* Calculate purchase totals
+* Transform purchase records
+* Filter high-value purchases
+* Calculate total sales
+* Calculate average purchase value
+* Identify high-value purchases
 
 ---
 
-### APP6 – Activity Monitoring System
+## APP5 – BESCOM Smart Electricity Consumption Monitoring System
 
-A Google Fit-inspired activity monitoring system implemented using
-decorators and closures.
+An electricity consumption monitoring system that processes readings sequentially using generators and iterators.
 
-**Concepts Used:**
-- Decorators
-- Closures
-- Higher-Order Functions
-- Function Authentication
-- Execution-Time Monitoring
+### Concepts Used
 
-**Decorators Implemented:**
-- `authenticate()`
-- `log_execution()`
-- `execution_timer()`
+* Generators
+* Iterators
+* `yield`
+* `__iter__()`
+* `__next__()`
 
-**Operations:**
-- Authenticate users
-- Log activity execution
-- Measure execution time
-- Apply multiple decorators
-- Monitor activity records
+### Main Operations
 
-## Technologies Used
+* Generate electricity readings
+* Process readings sequentially
+* Calculate total consumption
+* Calculate average consumption
+* Identify high-consumption readings
+* Monitor electricity usage
 
-- Python
-- Jupyter Notebook
-- Python IDLE / VS Code
-- Python Standard Library
+---
 
-## Repository Structure
+## APP6 – Google Fit Inspired Activity Monitoring System
+
+An activity monitoring system using decorators, closures, and higher-order functions.
+
+### Concepts Used
+
+* Decorators
+* Closures
+* Higher-Order Functions
+* Function Authentication
+* Execution-Time Monitoring
+
+### Main Decorators
+
+* `authenticate()`
+* `log_execution()`
+* `execution_timer()`
+
+### Main Operations
+
+* Authenticate users
+* Log activity execution
+* Calculate execution time
+* Apply multiple decorators
+* Monitor activity records
+
+---
+
+## APP7 – IDM-like Multi-File Download Manager
+
+A multi-file download manager designed to demonstrate concurrent execution using Python multithreading.
+
+### Concepts Used
+
+* Multithreading
+* Thread Synchronization
+* Concurrent Execution
+* `start()`
+* `join()`
+
+### Main Class
+
+`DownloadThread`
+
+### Main Methods
+
+* `run()`
+* `start()`
+* `join()`
+
+### Main Operations
+
+* Create multiple download threads
+* Process multiple files concurrently
+* Synchronize thread execution
+* Display download status
+* Wait for thread completion
+
+---
+
+## APP8 – Zoho Payroll Processing System
+
+A payroll processing system demonstrating multiprocessing and asynchronous programming.
+
+### Concepts Used
+
+* Multiprocessing
+* AsyncIO
+* Asynchronous Programming
+* `async`
+* `await`
+* `gather()`
+
+### Main Classes
+
+`Employee`, `PayrollProcessor`
+
+### Main Methods / Functions
+
+* `Process()`
+* `Pool()`
+* `async`
+* `await`
+* `gather()`
+
+### Main Operations
+
+* Create employee payroll records
+* Calculate salaries
+* Process CPU-intensive payroll tasks
+* Retrieve employee information asynchronously
+* Perform concurrent asynchronous operations
+* Generate payroll reports
+
+---
+
+## APP9 – NPTEL Online Examination System
+
+An online examination system demonstrating exception handling, logging, assertions, and memory profiling.
+
+### Concepts Used
+
+* Exception Handling
+* Logging
+* Assertions
+* Memory Profiling
+* `tracemalloc`
+
+### Main Classes
+
+`Exam`, `Student`, `Question`
+
+### Main Logging Functions
+
+* `logging.info()`
+* `logging.error()`
+
+### Main Operations
+
+* Create examination questions
+* Accept student details and answers
+* Validate user inputs
+* Handle invalid inputs
+* Log important events and errors
+* Monitor memory usage
+* Calculate examination score
+* Display examination results
+
+---
+
+# Technologies Used
+
+* **Python**
+* **Jupyter Notebook**
+* **Python IDLE**
+* **VS Code**
+* Python Standard Library
+
+---
+
+# Python Concepts Covered
+
+The experiments in this repository cover the following Python concepts:
+
+### Object-Oriented Programming
+
+* Classes and Objects
+* Constructors
+* Inheritance
+* Class Hierarchy
+* Encapsulation
+* Polymorphism
+* Operator Overloading
+* Special Methods
+
+### Functional Programming
+
+* Lambda Functions
+* `map()`
+* `filter()`
+* `reduce()`
+* Higher-Order Functions
+
+### Advanced Python
+
+* Generators
+* Iterators
+* `yield`
+* Decorators
+* Closures
+
+### Concurrent and Asynchronous Programming
+
+* Multithreading
+* Thread Synchronization
+* Multiprocessing
+* AsyncIO
+* `async`
+* `await`
+* `gather()`
+
+### Error Handling and Monitoring
+
+* Exception Handling
+* Assertions
+* Logging
+* `logging.info()`
+* `logging.error()`
+* Memory Profiling
+* `tracemalloc`
+
+---
+
+# Repository Structure
 
 ```text
-Python-Lab/
+Python-Programming-Lab/
 │
 ├── APP1.ipynb
 ├── APP2.ipynb
@@ -165,4 +358,45 @@ Python-Lab/
 ├── APP4.ipynb
 ├── APP5.ipynb
 ├── APP6.ipynb
+├── APP7.ipynb
+├── APP8.ipynb
+├── APP9.ipynb
 └── README.md
+```
+
+---
+
+# How to Run
+
+1. Clone or download this repository.
+2. Open the required `.ipynb` file using Jupyter Notebook, JupyterLab, Google Colab, or VS Code.
+3. Make sure Python is installed on the system.
+4. Run the notebook cells sequentially.
+5. Verify the output displayed for each experiment.
+
+---
+
+# Learning Outcomes
+
+After completing these experiments, the following Python programming skills are demonstrated:
+
+* Designing programs using Object-Oriented Programming.
+* Implementing inheritance, encapsulation, and polymorphism.
+* Using Python special methods and operator overloading.
+* Applying functional programming techniques.
+* Processing data using lambda functions, `map()`, `filter()`, and `reduce()`.
+* Implementing generators and iterators for sequential data processing.
+* Using decorators and closures to extend function behavior.
+* Implementing multithreaded applications.
+* Understanding thread synchronization and concurrent execution.
+* Using multiprocessing for CPU-intensive tasks.
+* Implementing asynchronous operations using AsyncIO.
+* Handling exceptions and validating user input.
+* Implementing application logging.
+* Monitoring memory usage using `tracemalloc`.
+
+---
+
+# Conclusion
+
+This repository demonstrates the practical implementation of fundamental and advanced Python programming concepts through nine application-oriented laboratory experiments. Each experiment focuses on a different Python feature and provides hands-on experience in developing structured and functional Python applications.
