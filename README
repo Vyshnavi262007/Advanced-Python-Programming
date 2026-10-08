@@ -1,352 +1,409 @@
-# Python Programming Lab Applications
+# Python Programming Lab
 
-This repository contains the implementations of Python Programming Lab experiments based on Object-Oriented Programming, Functional Programming, Generators, Iterators, Decorators, Multithreading, Multiprocessing, Asynchronous Programming, Exception Handling, Logging, and Memory Profiling.
-
-Each experiment is implemented in a separate Jupyter Notebook.
-
----
+This repository contains the Python Programming Lab experiments covering **Object-Oriented Programming, Functional Programming, Generators, Decorators, Multithreading, Multiprocessing, AsyncIO, Exception Handling, NumPy, and Pandas**.
 
 ## Experiments
 
-| File         | Experiment                                             | Main Concepts                                                  |
-| ------------ | ------------------------------------------------------ | -------------------------------------------------------------- |
-| `APP1.ipynb` | Zomato-like Food Delivery Management System            | Classes, Objects, Inheritance, OOP                             |
-| `APP2.ipynb` | SBI YONO Digital Banking System                        | Encapsulation, Inheritance, Polymorphism, Operator Overloading |
-| `APP3.ipynb` | Zoomcar Vehicle Rental Management System               | Class Hierarchy, Inheritance, Special Methods                  |
-| `APP4.ipynb` | Amazon Customer Purchase Analytics                     | Lambda, Map, Filter, Reduce                                    |
-| `APP5.ipynb` | BESCOM Smart Electricity Consumption Monitoring System | Generators, Iterators, `yield`                                 |
-| `APP6.ipynb` | Google Fit Inspired Activity Monitoring System         | Decorators, Closures, Higher-Order Functions                   |
-| `APP7.ipynb` | IDM-like Multi-File Download Manager                   | Multithreading, Thread Synchronization                         |
-| `APP8.ipynb` | Zoho Payroll Processing System                         | Multiprocessing, AsyncIO, Asynchronous Programming             |
-| `APP9.ipynb` | NPTEL Online Examination System                        | Exception Handling, Logging, Assertions, Memory Profiling      |
-| `APP10.ipynb` | Google Maps Inspired Smart Traffic Data Analytics System | NumPy Arrays, Vectorized Operations, Statistical Functions  |
+| Experiment | Title                                                         | Main Concepts                                                  |
+| ---------- | ------------------------------------------------------------- | -------------------------------------------------------------- |
+| 1          | Zomato Food Delivery Management System                        | Classes, Objects, Inheritance, OOP                             |
+| 2          | SBI YONO Digital Banking System                               | Encapsulation, Inheritance, Polymorphism, Operator Overloading |
+| 3          | Zoomcar Vehicle Rental System                                 | Class Hierarchy, Inheritance, Special Methods                  |
+| 4          | Amazon Customer Purchase Analytics                            | Lambda, map(), filter(), reduce()                              |
+| 5          | BESCOM Electricity Consumption System                         | Generators, Iterators, yield                                   |
+| 6          | Google Fit Activity Monitoring System                         | Decorators, Closures, Higher-Order Functions                   |
+| 7          | IDM Multi-File Download Manager                               | Multithreading, Thread Synchronization                         |
+| 8          | Zoho Payroll Processing System                                | Multiprocessing, AsyncIO, async/await                          |
+| 9          | NPTEL Online Examination System                               | Exception Handling, Logging, Assertions, tracemalloc           |
+| 10         | Google Maps Smart Traffic Data Analytics                      | NumPy Arrays, Vectorization, Statistical Functions             |
+| 11         | Naukri Candidate Registration Validation and Reporting System | Pandas, Data Cleaning, Data Aggregation                        |
 
 ---
 
-# Detailed Experiments
+# Experiment 1 – Zomato Food Delivery Management System
 
-## APP1 – Zomato-like Food Delivery Management System
+## Problem Statement
 
-A food delivery management system designed using Python classes and inheritance.
+Develop a Zomato-like Food Delivery Management System using Python Object-Oriented Programming concepts.
 
-### Concepts Used
+## Concepts Used
 
 * Classes and Objects
-* Constructors
 * Inheritance
+* Encapsulation
+* Polymorphism
 * Object-Oriented Programming
 
-### Main Classes
+## Main Features
 
-`User`, `Customer`, `PremiumCustomer`, `DeliveryPartner`, `Restaurant`, `Order`
-
-### Main Methods
-
-`place_order()`, `calculate_discount()`, `assign_delivery()`, `generate_bill()`, `display_details()`
+* Manage customer information.
+* Manage restaurant details.
+* Manage food orders.
+* Calculate order amounts.
+* Display order details.
 
 ---
 
-## APP2 – SBI YONO Digital Banking System
+# Experiment 2 – SBI YONO Digital Banking System
 
-A digital banking system demonstrating encapsulation, polymorphism, and operator overloading.
+## Problem Statement
 
-### Concepts Used
+Develop an SBI YONO-like Digital Banking System demonstrating encapsulation, inheritance, runtime polymorphism, and operator overloading.
+
+## Concepts Used
 
 * Encapsulation
 * Inheritance
 * Runtime Polymorphism
 * Operator Overloading
-* Private Attributes
+* Classes and Objects
 
-### Main Classes
+## Main Features
 
-`BankAccount`, `SavingsAccount`, `CurrentAccount`, `FixedDepositAccount`
-
-### Special Methods
-
-* `__add__()`
-* `__gt__()`
-
-### Main Operations
-
-* Deposit
-* Withdraw
-* Interest calculation
-* Balance management
-* PIN management
+* Create bank accounts.
+* Deposit and withdraw money.
+* Display account details.
+* Demonstrate different account types.
+* Perform operator overloading.
 
 ---
 
-## APP3 – Zoomcar Vehicle Rental Management System
+# Experiment 3 – Zoomcar Vehicle Rental System
 
-A vehicle rental management system using class hierarchies and Python special methods.
+## Problem Statement
 
-### Concepts Used
+Develop a Zoomcar-like Vehicle Rental System using class hierarchy, inheritance, and special methods.
 
-* Class Hierarchy
+## Concepts Used
+
+* Classes and Objects
 * Inheritance
-* Python Special Methods
-* Object Creation and Deletion
+* Class Hierarchy
+* Special Methods
+* Method Overriding
 
-### Main Classes
+## Main Features
 
-`Vehicle`, `Car`, `Bike`, `ElectricScooter`, `Rental`
-
-### Special Methods
-
-* `__init__()`
-* `__str__()`
-* `__repr__()`
-* `__len__()`
-* `__del__()`
-
-### Main Operations
-
-* Vehicle management
-* Rental management
-* Rental charge calculation
-* Vehicle category handling
+* Manage different types of vehicles.
+* Store vehicle information.
+* Calculate rental charges.
+* Display vehicle details.
+* Demonstrate inheritance.
 
 ---
 
-## APP4 – Amazon Customer Purchase Analytics
+# Experiment 4 – Amazon Customer Purchase Analytics
 
-A customer purchase analytics system for processing purchase records using functional programming.
+## Problem Statement
 
-### Concepts Used
+Develop an Amazon-like Customer Purchase Analytics System using functional programming techniques.
+
+## Concepts Used
 
 * Lambda Functions
 * `map()`
 * `filter()`
 * `reduce()`
-* Functional Programming
 
-### Main Operations
+## Main Features
 
-* Calculate purchase totals
-* Transform purchase records
-* Filter high-value purchases
-* Calculate total sales
-* Calculate average purchase value
-* Identify high-value purchases
+* Process customer purchase data.
+* Calculate purchase totals.
+* Filter products based on conditions.
+* Transform data using `map()`.
+* Calculate aggregate values using `reduce()`.
 
 ---
 
-## APP5 – BESCOM Smart Electricity Consumption Monitoring System
+# Experiment 5 – BESCOM Electricity Consumption System
 
-An electricity consumption monitoring system that processes readings sequentially using generators and iterators.
+## Problem Statement
 
-### Concepts Used
+Develop a BESCOM Electricity Consumption Monitoring System using generators and iterators.
+
+## Concepts Used
 
 * Generators
 * Iterators
 * `yield`
-* `__iter__()`
-* `__next__()`
+* Lazy Evaluation
 
-### Main Operations
+## Main Features
 
-* Generate electricity readings
-* Process readings sequentially
-* Calculate total consumption
-* Calculate average consumption
-* Identify high-consumption readings
-* Monitor electricity usage
+* Generate electricity consumption values.
+* Process values one at a time.
+* Calculate electricity consumption.
+* Demonstrate generator functionality.
+* Reduce unnecessary memory usage.
 
 ---
 
-## APP6 – Google Fit Inspired Activity Monitoring System
+# Experiment 6 – Google Fit Activity Monitoring System
 
-An activity monitoring system using decorators, closures, and higher-order functions.
+## Problem Statement
 
-### Concepts Used
+Develop a Google Fit-like Activity Monitoring System using decorators, closures, and higher-order functions.
+
+## Concepts Used
 
 * Decorators
 * Closures
 * Higher-Order Functions
-* Function Authentication
-* Execution-Time Monitoring
+* Functions as Objects
 
-### Main Decorators
+## Main Features
 
-* `authenticate()`
-* `log_execution()`
-* `execution_timer()`
-
-### Main Operations
-
-* Authenticate users
-* Log activity execution
-* Calculate execution time
-* Apply multiple decorators
-* Monitor activity records
+* Track user activities.
+* Calculate activity statistics.
+* Use decorators for additional functionality.
+* Demonstrate closures.
+* Use higher-order functions.
 
 ---
 
-## APP7 – IDM-like Multi-File Download Manager
+# Experiment 7 – IDM Multi-File Download Manager
 
-A multi-file download manager designed to demonstrate concurrent execution using Python multithreading.
+## Problem Statement
 
-### Concepts Used
+Develop an IDM-like Multi-File Download Manager using multithreading to download multiple files simultaneously.
+
+## Concepts Used
 
 * Multithreading
+* `threading.Thread`
+* `start()`
+* `join()`
 * Thread Synchronization
-* Concurrent Execution
-* `start()`
-* `join()`
+* `Lock`
 
-### Main Class
+## Main Features
 
-`DownloadThread`
-
-### Main Methods
-
-* `run()`
-* `start()`
-* `join()`
-
-### Main Operations
-
-* Create multiple download threads
-* Process multiple files concurrently
-* Synchronize thread execution
-* Display download status
-* Wait for thread completion
+* Create multiple download threads.
+* Process multiple files concurrently.
+* Display download progress.
+* Synchronize thread output.
+* Wait for all downloads to complete.
 
 ---
 
-## APP8 – Zoho Payroll Processing System
+# Experiment 8 – Zoho Payroll Processing System
 
-A payroll processing system demonstrating multiprocessing and asynchronous programming.
+## Problem Statement
 
-### Concepts Used
+Develop a Zoho Payroll Processing System using multiprocessing and AsyncIO for CPU-intensive and I/O-bound operations.
+
+## Concepts Used
 
 * Multiprocessing
+* `Process`
+* `Pool`
 * AsyncIO
-* Asynchronous Programming
 * `async`
 * `await`
-* `gather()`
+* `asyncio.gather()`
 
-### Main Classes
+## Main Features
 
-`Employee`, `PayrollProcessor`
-
-### Main Methods / Functions
-
-* `Process()`
-* `Pool()`
-* `async`
-* `await`
-* `gather()`
-
-### Main Operations
-
-* Create employee payroll records
-* Calculate salaries
-* Process CPU-intensive payroll tasks
-* Retrieve employee information asynchronously
-* Perform concurrent asynchronous operations
-* Generate payroll reports
+* Process employee payroll information.
+* Perform CPU-intensive payroll calculations.
+* Use multiple processes.
+* Retrieve employee information asynchronously.
+* Execute multiple asynchronous tasks concurrently.
+* Generate payroll reports.
 
 ---
 
-## APP9 – NPTEL Online Examination System
+# Experiment 9 – NPTEL Online Examination System
 
-An online examination system demonstrating exception handling, logging, assertions, and memory profiling.
+## Problem Statement
 
-### Concepts Used
+Develop an NPTEL Online Examination System with robust error handling, logging, assertions, and memory profiling.
+
+## Concepts Used
 
 * Exception Handling
+* `try-except`
 * Logging
 * Assertions
-* Memory Profiling
 * `tracemalloc`
+* Memory Profiling
 
-### Main Classes
+## Main Features
 
-`Exam`, `Student`, `Question`
+* Manage examination questions.
+* Accept student answers.
+* Validate input.
+* Handle exceptions.
+* Record important events using logging.
+* Record errors using `logging.error()`.
+* Validate conditions using assertions.
+* Monitor memory usage using `tracemalloc`.
 
-### Main Logging Functions
+---
 
-* `logging.info()`
-* `logging.error()`
+# Experiment 10 – Google Maps Smart Traffic Data Analytics
 
-### Main Operations
+## Problem Statement
 
-* Create examination questions
-* Accept student details and answers
-* Validate user inputs
-* Handle invalid inputs
-* Log important events and errors
-* Monitor memory usage
-* Calculate examination score
-* Display examination results
+Develop a Google Maps-inspired Smart Traffic Data Analytics System using NumPy arrays and vectorized operations.
+
+## Concepts Used
+
+* NumPy Arrays
+* Vectorized Operations
+* `array()`
+* `reshape()`
+* `sum()`
+* `mean()`
+* `std()`
+* `argmax()`
+* `where()`
+
+## Main Features
+
+* Store traffic measurements using NumPy arrays.
+* Reshape traffic data.
+* Calculate total traffic.
+* Calculate average traffic.
+* Calculate standard deviation.
+* Identify high-traffic locations.
+* Find the most congested location.
+* Generate traffic categories.
+* Calculate time-slot averages.
+
+---
+
+# Experiment 11 – Naukri Candidate Registration Validation and Reporting System
+
+## Problem Statement
+
+A recruitment portal receives candidate registration records. Develop a Candidate Registration Validation and Reporting System using Pandas.
+
+## Suggested Classes / Functions
+
+* `Candidate`
+* `CandidateReport`
+
+## Suggested Methods / Functions
+
+* `read_csv()`
+* `groupby()`
+* `merge()`
+* `pivot_table()`
+* `fillna()`
+
+## Tools / Libraries Used
+
+* Python
+* Pandas
+* Python IDLE
+* VS Code
+* Jupyter Notebook
+
+## Python Features Used
+
+* Pandas DataFrames
+* Data Cleaning
+* Data Validation
+* Data Aggregation
+* Report Generation
+
+## Constraints
+
+* Handle missing candidate information.
+* Validate candidate records.
+* Use Pandas DataFrames.
+* Generate summary reports.
+* Use grouping and aggregation.
+
+## Step-wise Implementation
+
+1. Create or load candidate data.
+2. Read the data using `read_csv()`.
+3. Inspect the dataset.
+4. Identify missing values.
+5. Handle missing values using `fillna()`.
+6. Validate required candidate fields.
+7. Group candidates using `groupby()`.
+8. Merge information where required using `merge()`.
+9. Generate a summary using `pivot_table()`.
+10. Generate the final report.
+11. Execute and verify the output.
+
+## Challenge Tasks
+
+* Identify candidates eligible based on CGPA.
+* Generate department-wise reports.
+* Identify incomplete profiles.
+* Generate placement eligibility statistics.
+* Create a company-wise candidate summary.
+
+## Viva Questions
+
+### 1. What is Pandas?
+
+Pandas is a Python library used for **data manipulation, data cleaning, analysis, and processing**.
+
+### 2. What is a DataFrame?
+
+A DataFrame is a **two-dimensional tabular data structure** in Pandas containing rows and columns.
+
+### 3. What is `read_csv()`?
+
+`read_csv()` is used to **read data from a CSV file into a Pandas DataFrame**.
+
+### 4. Why is `fillna()` used?
+
+`fillna()` is used to **replace missing or null values** in a DataFrame.
+
+### 5. What is `groupby()`?
+
+`groupby()` is used to **group data based on one or more columns** and perform operations such as count, sum, and mean.
+
+### 6. What is a Pivot Table?
+
+A pivot table is used to **summarize and analyze data using rows, columns, and aggregation functions**.
 
 ---
 
 # Technologies Used
 
 * **Python**
+* **Pandas**
+* **NumPy**
 * **Jupyter Notebook**
-* **Python IDLE**
 * **VS Code**
-* Python Standard Library
+* **Python IDLE**
 
----
+# Learning Outcomes
 
-# Python Concepts Covered
+By completing these experiments, the following Python concepts are covered:
 
-The experiments in this repository cover the following Python concepts:
-
-### Object-Oriented Programming
-
+* Object-Oriented Programming
 * Classes and Objects
-* Constructors
 * Inheritance
-* Class Hierarchy
 * Encapsulation
 * Polymorphism
 * Operator Overloading
-* Special Methods
-
-### Functional Programming
-
 * Lambda Functions
-* `map()`
-* `filter()`
-* `reduce()`
-* Higher-Order Functions
-
-### Advanced Python
-
-* Generators
-* Iterators
-* `yield`
-* Decorators
-* Closures
-
-### Concurrent and Asynchronous Programming
-
+* Functional Programming
+* Generators and Iterators
+* Decorators and Closures
 * Multithreading
 * Thread Synchronization
 * Multiprocessing
 * AsyncIO
-* `async`
-* `await`
-* `gather()`
-
-### Error Handling and Monitoring
-
 * Exception Handling
-* Assertions
 * Logging
-* `logging.info()`
-* `logging.error()`
+* Assertions
 * Memory Profiling
-* `tracemalloc`
-
----
+* NumPy
+* Vectorized Operations
+* Pandas
+* Data Cleaning
+* Data Aggregation
+* Data Analysis
+* Report Generation
 
 # Repository Structure
 
@@ -362,78 +419,12 @@ Python-Programming-Lab/
 ├── APP7.ipynb
 ├── APP8.ipynb
 ├── APP9.ipynb
+├── APP10.ipynb
+├── APP11.ipynb
+│
 └── README.md
 ```
 
----
-
-# How to Run
-
-1. Clone or download this repository.
-2. Open the required `.ipynb` file using Jupyter Notebook, JupyterLab, Google Colab, or VS Code.
-3. Make sure Python is installed on the system.
-4. Run the notebook cells sequentially.
-5. Verify the output displayed for each experiment.
-
----
-
-# Learning Outcomes
-
-After completing these experiments, the following Python programming skills are demonstrated:
-
-* Designing programs using Object-Oriented Programming.
-* Implementing inheritance, encapsulation, and polymorphism.
-* Using Python special methods and operator overloading.
-* Applying functional programming techniques.
-* Processing data using lambda functions, `map()`, `filter()`, and `reduce()`.
-* Implementing generators and iterators for sequential data processing.
-* Using decorators and closures to extend function behavior.
-* Implementing multithreaded applications.
-* Understanding thread synchronization and concurrent execution.
-* Using multiprocessing for CPU-intensive tasks.
-* Implementing asynchronous operations using AsyncIO.
-* Handling exceptions and validating user input.
-* Implementing application logging.
-* Monitoring memory usage using `tracemalloc`.
-
----
-
-## APP10 – Google Maps Inspired Smart Traffic Data Analytics System
-
-A smart traffic data analytics system that processes traffic measurements from multiple locations using NumPy arrays and vectorized operations.
-
-### Concepts Used
-- NumPy Arrays
-- Vectorized Operations
-- Array Reshaping
-- Statistical Functions
-- Data Analysis
-
-### Main Classes / Functions
-`TrafficData`, `SensorData`
-
-### Main NumPy Functions
-- `np.array()`
-- `reshape()`
-- `np.sum()`
-- `np.mean()`
-- `np.std()`
-- `np.argmax()`
-- `np.where()`
-
-### Main Operations
-- Create traffic data for multiple locations
-- Convert data into NumPy arrays
-- Reshape traffic data
-- Calculate total traffic
-- Calculate average traffic
-- Calculate standard deviation
-- Identify high-traffic locations
-- Find the most congested location
-- Categorize locations as Low, Medium, or High traffic
-- Calculate average traffic for each time slot
-- Generate a traffic summary
-
 # Conclusion
 
-This repository demonstrates the practical implementation of fundamental and advanced Python programming concepts through nine application-oriented laboratory experiments. Each experiment focuses on a different Python feature and provides hands-on experience in developing structured and functional Python applications.
+This repository demonstrates the practical implementation of important Python programming concepts through real-world application-based experiments. The experiments progress from basic Object-Oriented Programming to advanced concepts such as concurrency, asynchronous programming, numerical computing, and data analytics using NumPy and Pandas.
