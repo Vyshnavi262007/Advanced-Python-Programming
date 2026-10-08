@@ -19,6 +19,7 @@ Each experiment is implemented in a separate Jupyter Notebook.
 | `APP7.ipynb` | IDM-like Multi-File Download Manager                   | Multithreading, Thread Synchronization                         |
 | `APP8.ipynb` | Zoho Payroll Processing System                         | Multiprocessing, AsyncIO, Asynchronous Programming             |
 | `APP9.ipynb` | NPTEL Online Examination System                        | Exception Handling, Logging, Assertions, Memory Profiling      |
+| `APP10.ipynb` | Google Maps Inspired Smart Traffic Data Analytics System | NumPy Arrays, Vectorized Operations, Statistical Functions  |
 
 ---
 
@@ -396,6 +397,42 @@ After completing these experiments, the following Python programming skills are 
 * Monitoring memory usage using `tracemalloc`.
 
 ---
+
+## APP10 – Google Maps Inspired Smart Traffic Data Analytics System
+
+A smart traffic data analytics system that processes traffic measurements from multiple locations using NumPy arrays and vectorized operations.
+
+### Concepts Used
+- NumPy Arrays
+- Vectorized Operations
+- Array Reshaping
+- Statistical Functions
+- Data Analysis
+
+### Main Classes / Functions
+`TrafficData`, `SensorData`
+
+### Main NumPy Functions
+- `np.array()`
+- `reshape()`
+- `np.sum()`
+- `np.mean()`
+- `np.std()`
+- `np.argmax()`
+- `np.where()`
+
+### Main Operations
+- Create traffic data for multiple locations
+- Convert data into NumPy arrays
+- Reshape traffic data
+- Calculate total traffic
+- Calculate average traffic
+- Calculate standard deviation
+- Identify high-traffic locations
+- Find the most congested location
+- Categorize locations as Low, Medium, or High traffic
+- Calculate average traffic for each time slot
+- Generate a traffic summary
 
 # Conclusion
 
